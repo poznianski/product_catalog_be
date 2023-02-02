@@ -5,6 +5,8 @@ import { router as productsRouter } from './routes/products';
 
 const router = express.Router();
 
+const port = 5000
+
 const app = express();
 
 app.use(cors());
@@ -18,3 +20,7 @@ router.get('/', (req, res) => {
 app.use(express.static('public'));
 
 app.use('/products', productsRouter);
+
+application.listen(port, () => {
+  console.log(`Application listening on port ${port}`);
+});
