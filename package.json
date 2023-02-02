@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./build/index.js",
+    "start": "node build/index.js",
     "build": "npm ci && tsc",
     "setup": "ts-node src/setup.ts",
     "ts-check": "tsc --noEmit --lib ES2015 ./src/*.ts",
